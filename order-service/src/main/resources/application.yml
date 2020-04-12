@@ -1,0 +1,9 @@
+server:
+  port: 8686
+spring:
+  application:
+    name: order-service
+opentracing: 
+  jaeger:
+    http-sender:
+      url: http://jaeger-collector.default.svc.cluster.local:14268/api/traces

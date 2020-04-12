@@ -1,0 +1,19 @@
+server:
+  port: 8700
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://104.198.235.88:3306/nagp_2020_assgn3
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+opentracing:
+  jaeger:
+    http-sender:
+      url: http://jaeger-collector.default.svc.cluster.local:14268/api/traces
+    #udp-sender:
+    #  host: 35.192.1.201
+    #  port: 14268
